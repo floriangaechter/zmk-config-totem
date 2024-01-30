@@ -80,7 +80,7 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
-                &mt LSHFT A &mt LALT S  &mt LCTRL D &mt LGUI F  &kp G           &kp H       &mt RUI J   &mt RCTRL K &mt RALT L  &mt RSHFT O
+                &mt LSHFT A &mt LALT S  &mt LCTRL D &mt LGUI F  &kp G           &kp H       &mt RGUI J  &mt RCTRL K &mt RALT L  &mt RSHFT O
     &kp ESC     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp TILDE
                                         &kp DEL   &lt NAV TAB   &kp RET         &kp SPACE   &lt SYM ESC   &kp BSPC
                         >;
