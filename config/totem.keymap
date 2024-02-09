@@ -19,11 +19,9 @@
 #define NAV  1
 #define SYM  2
 #define ADJ  3
-#define TVP1 4
-#define TVP2 5
 
 &mt {
-  quick-tap-ms = <100>;
+  quick-tap-ms = <170>;
   global-quick-tap;
   flavor = "tap-preferred";
   tapping-term-ms = <170>;
@@ -53,7 +51,7 @@ label= "BASE"                              ;
                 &kp Q       &kp W       &kp E       &kp R       &kp T           &kp Y       &kp U       &kp I       &kp O       &kp P
                 &mt LSHFT A &mt LALT S  &mt LCTRL D &mt LGUI F  &kp G           &kp H       &mt RGUI J  &mt RCTRL K &mt RALT L  &mt RSHFT O
     &kp ESC     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp TILDE
-                                        &kp DEL     &lt NAV TAB &kp RET         &kp SPACE   &lt SYM ESC &kp BSPC
+                                        &kp DEL     &lt SYM TAB &kp RET         &kp SPACE   &lt NAV ESC &kp BSPC
                         >;
                 };
 
@@ -62,7 +60,7 @@ label= "BASE"                              ;
 
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-label= "NAVI"                              ;
+label= "NAV"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
 //             ┃           ┃     1     ┃     2     ┃     3     ┃           ┃   ┃           ┃           ┃           ┃           ┃     :     ┃
@@ -79,14 +77,14 @@ label= "NAVI"                              ;
                 &trans      &kp KP_N1   &kp KP_N2   &kp KP_N3   &trans          &trans      &trans      &trans      &trans      &kp COLON
                 &trans      &kp KP_N4   &kp KP_N5   &kp KP_N6   &trans          &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp SEMI
     &trans      &trans      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp KP_N0       &trans      &trans      &trans      &trans      &trans      &trans
-                                        &trans      &trans      &trans          &trans      &mo ADJ     &trans
+                                        &trans      &mo ADJ     &trans          &trans      &trans      &trans
                        >;
                 };
 
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
 
-                sim_layer {
+                sym_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "SYM"                               ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -105,7 +103,7 @@ label= "SYM"                               ;
                 &trans      &kp LBKT    &kp LBRC    &kp RBRC    &trans          &kp CARET   &kp LPAR    &kp RPAR    &kp RBKT    &kp TILDE
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT       &kp ASTRK   &kp MINUS   &kp EQUAL   &kp BSLH    &kp GRAVE
     &trans      &trans      &trans      &trans      &trans      &trans          &kp AMPS    &kp UNDER   &kp PLUS    &kp PIPE    &trans      &trans
-                                        &trans      &mo ADJ     &trans          &trans      &trans      &trans
+                                        &trans      &trans      &trans          &trans      &mo ADJ     &trans
                         >;
                 };
 
